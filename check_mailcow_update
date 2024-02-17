@@ -1,0 +1,7 @@
+#!/bin/bash
+
+output=$(cd /opt/mailcow-dockerized; ./update.sh -c | sed '1d')
+exit_status=$?
+
+echo $output
+exit $exit_status
